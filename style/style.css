@@ -52,6 +52,7 @@ nav .toggleBtn {
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease;
+    padding: 8px 2px;
 }
 
 .navbar-icons a svg path {

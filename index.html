@@ -13,7 +13,7 @@
 <body>
     <header>
         <!-- Navbar start -->
-        <nav class="navbar navbar-expand-lg bg-white shadow-sm">
+        <nav class="navbar navbar-expand-lg bg-white shadow-sm fixed-top">
             <div class="container-xxl align-items-center">
                 <a class="navbar-brand d-flex align-items-center" href="#">
                     <img src="./assets/logo.png" alt="logo" />
@@ -26,19 +26,19 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">Home</a>
+                            <a class="nav-link text-end active" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Shop</a>
+                            <a class="nav-link text-end" href="#">Shop</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
+                            <a class="nav-link text-end" href="#">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
+                            <a class="nav-link text-end" href="#">Contact</a>
                         </li>
                     </ul>
-                    <div class="navbar-icons d-flex align-items-center gap-4 justify-content-end mt-3 mt-lg-0">
+                    <div class="navbar-icons d-flex align-items-center gap-4 justify-content-end justify-content-md-end mt-3 mt-lg-0">
                         <a href="#" class="">
                             <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -324,10 +324,10 @@
                         <!-- Static Left Image -->
                         <div class="position-relative static col-lg-6 pt-5 pt-sm-0">
                             <img src="./assets/explore.png" class="img-fluid" alt="Static Room" />
-                            <div class="info-box position-absolute bottom-0 start-5 p-5">
-                                <div class="bg-white bg-opacity-50 p-4 shadow-sm d-inline-block">
+                            <div class="info-box position-absolute bottom-0 start-5 ps-4 pb-5">
+                                <div class="bg-white bg-opacity-75 p-4 shadow-sm d-inline-block">
                                     <small class="text-muted fs-6">01 — Bed Room</small>
-                                    <h5 class="fw-semibold fs-3 mb-0">Inner Peace</h5>
+                                    <h5 class="fw-semibold fs-3 mb-2">Inner Peace</h5>
                                 </div>
                             </div>
                         </div>
@@ -384,17 +384,15 @@
             </div>
 
             <div class="parent">
-                <div class="div1">
-                    <img src="./assets/furniture1.png" alt="" />
-                </div>
-                <div class="div2"><img src="./assets/furniture3.png" alt="" /></div>
-                <div class="div3"><img src="./assets/furniture2.png" alt="" /></div>
-                <div class="div4"><img src="./assets/furniture4.png" alt="" /></div>
-                <div class="div5"><img src="./assets/furniture5.png" alt="" /></div>
-                <div class="div6"><img src="./assets/furniture7.png" alt="" /></div>
-                <div class="div7"><img src="./assets/furniture6.png" alt="" /></div>
-                <div class="div8"><img src="./assets/furniture9.png" alt="" /></div>
-                <div class="div9"><img src="./assets/furniture8.png" alt="" /></div>
+                <div class="div1 p-2"><img class="img-fluid" src="./assets/furniture1.png" alt="" /></div>
+                <div class="div2 p-2"><img class="img-fluid" src="./assets/furniture3.png" alt="" /></div>
+                <div class="div3 p-2"><img class="img-fluid" src="./assets/furniture2.png" alt="" /></div>
+                <div class="div4 p-2"><img class="img-fluid" src="./assets/furniture4.png" alt="" /></div>
+                <div class="div5 p-2"><img class="img-fluid" src="./assets/furniture5.png" alt="" /></div>
+                <div class="div6 p-2"><img class="img-fluid" src="./assets/furniture7.png" alt="" /></div>
+                <div class="div7 p-2"><img class="img-fluid" src="./assets/furniture6.png" alt="" /></div>
+                <div class="div8 p-2"><img class="img-fluid" src="./assets/furniture9.png" alt="" /></div>
+                <div class="div9 p-2"><img class="img-fluid" src="./assets/furniture8.png" alt="" /></div>
             </div>
         </section>
         <!-- Furniture End -->
@@ -414,25 +412,25 @@
                 </div>
 
                 <!-- Links -->
-                <div class="col-md-3 col-sm-6">
-                    <h5>Links</h5>
-                    <a href="#">Home</a>
-                    <a href="#">Shop</a>
-                    <a href="#">About</a>
-                    <a href="#">Contact</a>
+                <div class="footer-link col-md-3 col-sm-6">
+                    <h5 class="mb-5">Links</h5>
+                    <a class="mb-4" href="#">Home</a>
+                    <a class="mb-4" href="#">Shop</a>
+                    <a class="mb-4" href="#">About</a>
+                    <a class="mb-4" href="#">Contact</a>
                 </div>
 
                 <!-- Help -->
-                <div class="col-md-3 col-sm-6">
-                    <h5>Help</h5>
-                    <a href="#">Payment Options</a>
-                    <a href="#">Returns</a>
-                    <a href="#">Privacy Policies</a>
+                <div class="footer-link col-md-3 col-sm-6">
+                    <h5 class="mb-5">Help</h5>
+                    <a class="mb-4" href="#">Payment Options</a>
+                    <a class="mb-4" href="#">Returns</a>
+                    <a class="mb-4" href="#">Privacy Policies</a>
                 </div>
 
                 <!-- Newsletter -->
-                <div class="col-md-3 col-sm-6">
-                    <h5>Newsletter</h5>
+                <div class="footer-link col-md-3 col-sm-6">
+                    <h5 class="mb-5">Newsletter</h5>
                     <div class="d-flex align-items-center border-bottom pb-1">
                         <input type="email" class="newsletter-input" placeholder="Enter Your Email Address" />
                         <button class="subscribe-btn">SUBSCRIBE</button>
@@ -441,7 +439,7 @@
             </div>
 
             <div class="footer-bottom">
-                <p>2023 funiro. All rights reserved</p>
+                <p>2025 funiro. All rights reserved</p>
             </div>
         </div>
     </footer>

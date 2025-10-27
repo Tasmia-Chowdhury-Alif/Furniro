@@ -31,8 +31,8 @@ nav .toggleBtn {
 }
 
 .navbar {
-    padding-top: 23px;
-    padding-bottom: 23px;
+    padding-top: 8px;
+    padding-bottom: 8px;
 }
 
 .navbar-nav .nav-link {
@@ -48,12 +48,25 @@ nav .toggleBtn {
 }
 
 .navbar-icons a {
-    font-size: 18px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.navbar-icons a svg path {
+    transition: stroke 0.3s ease, fill 0.3s ease;
 }
 
 .navbar-icons a:hover {
-    color: #b88e2f;
+    transform: scale(1.15);
 }
+
+.navbar-icons a:hover svg path {
+    stroke: #e97171;
+    fill: #e97171;
+}
+
 
 /* Banner start */
 
@@ -355,17 +368,23 @@ nav .toggleBtn {
     color: #3a3a3a;
 }
 
-.parent img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
 .parent {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(9, 1fr);
     gap: 8px;
+}
+
+.parent img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.parent img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 .div1 {
@@ -437,9 +456,10 @@ footer {
 }
 
 footer h5 {
+    font-family: var(--font-family);
     font-weight: 500;
     font-size: 16px;
-    margin-bottom: 20px;
+    color: #9f9f9f;
 }
 
 footer a {
@@ -448,10 +468,13 @@ footer a {
     display: block;
     margin-bottom: 10px;
     font-size: 15px;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
 }
 
 footer a:hover {
-    text-decoration: underline;
+    color: #b88e2f;
 }
 
 .footer-brand {
@@ -486,10 +509,14 @@ footer a:hover {
 .footer-bottom {
     border-top: 1px solid #e6e6e6;
     margin-top: 40px;
-    padding-top: 20px;
+    padding-top: 35px;
     text-align: left;
     font-size: 14px;
     color: #555;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    color: #000;
 }
 
 /* responsive */

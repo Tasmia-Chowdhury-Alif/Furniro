@@ -485,9 +485,11 @@ footer a:hover {
 }
 
 .footer-address {
-    color: #777;
-    font-size: 14px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
     line-height: 1.8;
+    color: #9f9f9f;
 }
 
 .newsletter-input {
